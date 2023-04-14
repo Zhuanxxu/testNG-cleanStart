@@ -11,7 +11,7 @@ public class Ebay_Advanced_Search_Page_Elements {
 
 	WebDriver driver;
 	
-	@FindBy(css="button.btn-prim") public WebElement advSearchBtn;
+	@FindBy(css="button.btn--primary") public WebElement advSearchBtn;
 	
 	@FindBy(id="gh-la") public WebElement ebayLogo;
 	

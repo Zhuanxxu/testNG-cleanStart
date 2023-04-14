@@ -9,7 +9,7 @@ public class Ebay_Search_Results_Page_Elements {
 	
 	WebDriver driver;
 
-	@FindBy(xpath="//div[@id='ResultSetItems']/descendant::h3[1]") public WebElement firstSearchResult;
+	@FindBy(xpath="/html") public WebElement firstSearchResult;
 	
 	public Ebay_Search_Results_Page_Elements(WebDriver driver) {
 		this.driver = driver;

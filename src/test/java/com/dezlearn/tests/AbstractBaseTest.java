@@ -46,8 +46,8 @@ public class AbstractBaseTest{
 //        options.addArguments("--disable-dev-shm-usage");
 //			options.addArguments("--headless");
 			driver = new ChromeDriver(options);
-			driver.manage().timeouts().implicitlyWait(8,SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(10,SECONDS);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 			driver.manage().window().setSize(new Dimension(1920, 1080));
 			driver.manage().window().maximize();
 		} else if(browser.equals("Firefox")) {

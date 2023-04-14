@@ -12,8 +12,8 @@ public class Ebay_Home_Sanity extends AbstractBaseTest {
 		
 		App().Flow().navigateToUrl(App().Pages().HomePage().getPageUrl());
 		
-		String expectedURL = "https://www.ebay.com/v/allcategories";
-		String expectedTitle = "All Categories - Browse and Discover more | eBay";
+		String expectedURL = "https://www.ebay.com/n/all-categories";
+		String expectedTitle = "Shop by Category | eBay";
 
 		Assert.assertTrue(App().Pages().HomePage().isSearchButtonEnabled(), "Verify Search Button Enabled");
 

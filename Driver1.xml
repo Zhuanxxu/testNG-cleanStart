@@ -1,8 +1,17 @@
-<suite name="Sanity Test Suite" parallel="classes" thread-count="2">
+<suite name="Sanity Test Suite" parallel="classes" thread-count="3">
+	<!--
+	parallel: This option allows you to specify the type of parallel execution for your tests. It can be set to one of the following values:
+		tests: Tests in different classes will be executed in parallel.
+		methods: Test methods within the same class will be executed in parallel.
+		classes: Test classes will be executed in parallel.
+		instances: Test instances will be executed in parallel.
+		none: Tests will be executed sequentially (default).
+	-->
 	<groups>
 		<run>
 			<include name="P0"/>
 			<include name="P1"/>
+			<include name="P2"/>
 		</run>
 	</groups>
 	<test name="Release 2019.5 Sanity Testing">
